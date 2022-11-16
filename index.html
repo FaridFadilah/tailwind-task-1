@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Tailwind CSS</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anybody:wght@100;200;300;400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navbar 1 -->
+  <nav id="header"
+    class="w-full z-10 border-b-[1px] border-myBlue/10 fixed top-0 left-0 right-0 bg-transparent backdrop-blur-md">
+    <!-- <section id="header"> -->
+    <div class="container px-5 lg:px-0 flex flex-wrap lg:flex-nowrap justify-between items-center gap-[72px] my-[18px]">
+      <div class="img-box">
+        <img src="img/logo.png" alt="">
+      </div>
+      <button data-collapse-toggle="navbar-defaults" type="button"
+        class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-defaults" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </button>
+
+      <div id="navbar-defaults" class="hidden lg:block w-full">
+        <div class="flex flex-col md:flex-row gap-5 items-center justify-between">
+          <!-- Left -->
+          <div class="menu-navigation flex items-center">
+            <ul class="flex flex-col md:flex-row items-center gap-8">
+              <li><a href="#!" class=" font-bold">Home</a></li>
+              <li>
+                <div class="item-dropdown flex items-center gap-[5px]">
+                  <a href="#!">Community</a>
+                  <img src="img/icon/caret-down.png" class="object-contain" alt="">
+                </div>
+              </li>
+              <li><a href="#!">Blog</a></li>
+              <li><a href="#!">Events</a></li>
+            </ul>
+          </div>
+
+          <!-- Right -->
+          <div class="menu-action flex flex-col md:flex-row  items-center gap-[42px]">
+            <div class="search-box flex items-center gap-2 border-b-gray-300 border-b">
+              <div class="img-box">
+                <img src="img/icon/MagnifyingGlass.svg" class="object-contain" alt="">
+              </div>
+              <form action="#!" class="w-full">
+                <input type="text" placeholder="Search here..."
+                  class="w-full bg-transparent border-none focus:ring-transparent">
+              </form>
+            </div>
+
+            <div class="p-4 bg-myBlue text-white rounded-xl">
+              <button class="btn-blue font-semibold">Log In</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <section id="hero" class="pt-[144px] font-inter h-full lg:h-[746px] bg-gradient-to-br from-white to-blue-500/20">
+    <div
+      class="container flex flex-wrap-reverse items-center justify-center lg:flex-nowrap lg:justify-between p-5 lg:p-0">
+      <div class="flex flex-col max-w-[515px]">
+        <div class="bg-myBlue/[.1] w-[177px] text-xs px-[29px] py-3 font-medium rounded-lg text-myBlue mb-[20px]">
+          Netbook community
+        </div>
+        <h1 class="text-[#0A093D] text-[56px] leading-[66px] font-bold">Your Solutions For Community!</h1>
+        <p class="text-lg font-normal text-[#656464]">More than 2 billion people in over countries use socibook to stay
+          in touch with
+          friends &
+          family.</p>
+        <div class="flex items-center gap-[18px] pt-[42px]">
+          <button class=" w-[162px] bg-myBlue h-14 rounded-[14px] text-white 
+          drop-shadow-2xl">About
+            Me</button>
+          <button
+            class="w-[162px] bg-transparent h-14 border border-myBlue rounded-[14px] text-myBlue hover:bg-myBlue hover:text-white transition duration-200">Invite
+            Friend</button>
+        </div>
+      </div>
+      <img src="img/hero-img.png" class="mt-8" alt="">
+    </div>
+  </section>
+  <section id="netbook" class="mt-[96px] font-inter mb-[51px]">
+    <div class="container p-5 lg:p-0 flex flex-wrap justify-center items-center lg:flex-nowrap lg:justify-between">
+      <div class="flex flex-col w-full lg:w-[35%] mt-10 lg:mt-0">
+        <a href="" class="text-myBlue text-lg font-normal mb-[10px]">Whats Netboks?</a>
+        <h1 class="text-[#0A093D] font-bold text-4xl mb-4">Why Join to Netbook Social Network? </h1>
+        <p class="text-base font-normal text-[#656464]">Recent surveys have indicated that small businesses recognise
+          the need they have to connect
+          with consumer.
+        </p>
+        <ul class="mt-9 mb-5 flex lg:block items-center gap-5 justify-center">
+          <li
+            class="before:content-[''] before:inline-block before:w-[18px] before:h-[18px] before:bg-[url('./img/icon/dot.svg')] before:mr-3 before:bg-cover before:bg-no-repeat items-center flex mb-4 text-lg leading-[18px] ">
+            Groups</li>
+          <li
+            class="before:content-[''] before:inline-block before:w-[18px] before:h-[18px] before:bg-[url('./img/icon/dot.svg')] before:mr-3 before:bg-cover before:bg-no-repeat items-center flex mb-4 ">
+            Messages</li>
+          <li
+            class="before:content-[''] before:inline-block before:w-[18px] before:h-[18px] before:bg-[url('./img/icon/dot.svg')] before:mr-3 before:bg-cover before:bg-no-repeat items-center flex mb-4">
+            Share</li>
+        </ul>
+      </div>
+      <div class="grid grid-cols-2 place-items-center gap-8 ">
+        <img src="img/netbook1.png" class="w-full object-contain" alt="">
+        <div class="space-y-8">
+          <img src="img/netbook2.png" class="w-full object-contain" alt="">
+          <img src="img/netbook3.png" class="w-full object-contain" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="chieve" class="mt-[84px] font-inter mb-[130px]">
+    <div class="container p-5 lg:p-0 flex flex-wrap lg:flex-nowrap items-center ">
+      <div class="flex flex-wrap lg:flex-nowrap items-center gap-6">
+        <div class="px-[44px] border border-gray-700 py-[42px] shadow-xl rounded-[14px]">
+          <div class="flex items-center gap-[10px] mb-[36px]">
+            <img src="img/icon/Star.svg" alt="">
+            <h3 class="text-xl leading-[20px]">4.8 Rating</h3>
+          </div>
+          <div class="flex items-center mb-10">
+            <div class="-space-x-2 flex mr-4">
+              <img src="img/Ellipse 16 (4).png" class="w-8 h-8 object-contain" alt="">
+              <img src="img/Ellipse 17.png" class="h-8 w-8 object-contain" alt="">
+              <img src="img/Ellipse 18.png" class="h-8 w-8 object-contain" alt="">
+            </div>
+            <h3 class="text-base leading-[18px] font-semibold">
+              <span class="text-myBlue">+ 836k</span>
+              Members
+            </h3>
+          </div>
+          <p class="text-base leading-[26px] font-normal mb-5">More than 2 billion we people over countries use
+            socibooks we
+            to stay in
+            touch with friends.</p>
+          <a href="#"
+            class="text-myBlue font-medium after:content-[''] after:bg-[url('./img/icon/ArrowRight.svg')] after:inline-block after:bg-cover after:w-[10px] after:h-[10px] after:ml-2    after:stroke-current after:fill-current after:text-myBlue">Join
+            Our
+            Community</a>
+        </div>
+        <div class="px-[42px] py-[44px] border border-gray-300 rounded-[14px]">
+          <div class="gap-[10px] mb-[35px] flex items-center">
+            <img src="img/icon/Trophy.svg" alt="">
+            <h3>Awards</h3>
+          </div>
+          <div class="gap-x-4 mb-[37px] flex items-center">
+            <img src="img/Ghlogo.png" class="h-6 w-6 object-contain" alt="">
+            <h3>
+              Best of
+              <span>2021</span>
+              on Github
+            </h3>
+          </div>
+          <p class="mb-10">More than 2 billion we people over countries use socibooks we to stay in touch with
+            friends.
+          </p>
+          <a href=""
+            class="text-[#4A4A56] font-medium after:content-[''] after:bg-[url('./img/icon/ArrowRight.svg')] after:inline-block after:bg-cover after:w-[10px] after:h-[10px] after:ml-2 ">Go
+            To Awards</a>
+        </div>
+        <div class=" ">
+          <h3 class="text-myBlue mb-[10px] font-medium">Our Achievement</h3>
+          <h1 class="font-bold text-4xl mb-[18px]">We are Connecting You The Digital Life.</h1>
+          <p class="text-base mb-[38px]">The scope the Social Media becomes crucial Is helps the business to directly
+            engage with
+            their needs and
+            wants.</p>
+          <button
+            class="py-[22px] px-[38px] bg-myBlue text-white rounded-[14px] after:content-[''] after:bg-[url('./img/icon/ArrowRight.svg')] after:inline-block after:bg-cover after:w-[10px] after:h-[10px] after:ml-2">Discover
+            me</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="mt-[60px] font-inter mb-20 "
+    style="background: linear-gradient(0deg, rgba(241, 246, 253, 0) 1.63%, #F1F6FD 20.5%, #F1F6FD 58.57%, #FFFFFF 100%)">
+    <div class="container flex flex-col items-center p-5 lg:p-0">
+      <h3 class="text-myBlue text-lg leading-[18px] font-medium mb-[10px]">Our Community</h3>
+      <h1 class="text-[#0A093D] text-4xl font-bold mb-[19px]">Community Main Feature</h1>
+      <p class="w-[421px] text-base text-center leading-[28px]">The wise man therefore always holds in these matters to
+        this principle of selection.
+      </p>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-[44px] mt-16">
+        <div class="bg-white p-10 flex rounded-[14px] hover:shadow-xl transition duration-200">
+          <div
+            class="w-[66px] h-[66px] mr-[36px] px-5 py-[19px] rounded-[24px] flex items-center justify-center bg-gradient-to-b from-[#5CA1FE] to-[#217BF4] shadow-xl">
+            <img src="img/icon/personal.svg" class="h-6 w-6" alt="">
+          </div>
+          <div class="flex flex-col">
+            <h1 class="text-2xl font-semibold leading-[26px] mb-[14px]">Members, Friends</h1>
+            <p class="text-base leading-[26px] ">Members, Friends Connection ( like followers ), Private Message</p>
+          </div>
+        </div>
+        <div class=" flex bg-white rounded-[14px] p-10 hover:shadow-xl transition duration-200">
+          <div
+            class="w-[66px] h-[66px] mr-[36px] px-4 py-[19px] rounded-[24px] flex items-center justify-center bg-gradient-to-br from-[#FF858A] to-[#F04148] shadow-xl">
+            <img src="img/icon/people.svg" class="h-6 w-6" alt="">
+          </div>
+          <div class="flex flex-col">
+            <h1 class="text-2xl font-semibold leading-[26px] mb-[14px]">Groups</h1>
+            <p class="text-base leading-[26px] ">Members, Friends Connection ( like followers ), Private Message</p>
+          </div>
+        </div>
+        <div class="flex bg-white rounded-[14px] p-10 hover:shadow-xl transition duration-200">
+          <div
+            class="w-[66px] h-[66px] px-4 py-[19px] rounded-[24px] flex items-center justify-center bg-gradient-to-b from-[#FFD085] to-[#FFAF2E] mr-[36px] shadow-xl">
+            <img src="img/icon/chat.svg" class="h-6 w-6" alt="">
+          </div>
+          <div class="flex flex-col">
+            <h1 class="text-2xl font-semibold leading-[26px] mb-[14px]">Forum</h1>
+            <p class="text-base leading-[26px]">Members, Friends Connection ( like followers ), Private Message</p>
+          </div>
+        </div>
+        <div class="flex p-10 rounded-[14px] bg-white hover:shadow-xl transition duration-200">
+          <div
+            class="w-[66px] h-[66px] px-4 py-[19px] rounded-[24px] flex items-center justify-center bg-gradient-to-b from-[#5CA1FE] to-[#217BF4] mr-[36px]">
+            <img src="img/icon/puzzle.svg" class="h-6 w-6" alt="">
+          </div>
+          <div class="flex flex-col">
+            <h1 class="text-2xl font-semibold leading-[26px] mb-[14px]">Custom Module</h1>
+            <p class="text-base leading-[26px]">Members, Friends Connection ( like followers ), Private Message</p>
+          </div>
+        </div>
+        <div class="flex p-10 bg-white rounded-[14px] hover:shadow-xl transition duration-200">
+          <div
+            class="w-[66px] h-[66px] px-4 py-[19px] rounded-[24px] flex items-center justify-center bg-gradient-to-br from-[#FF858A] to-[#F04148] mr-[36px]">
+            <img src="img/icon/personal.svg" class="h-6 w-6" alt="">
+          </div>
+          <div class="flex flex-col">
+            <h1 class="text-2xl font-semibold leading-[26px] mb-[14px]">List Builder</h1>
+            <p class="text-base leading-[26px]">Members, Friends Connection ( like followers ), Private Message</p>
+          </div>
+        </div>
+        <div class="flex p-10 bg-white rounded-[14px] hover:shadow-xl transition duration-200">
+          <div
+            class="w-[66px] h-[66px] px-4 py-[19px] rounded-[24px] flex items-center justify-center bg-gradient-to-b from-[#FFD085] to-[#FFAF2E] mr-[36px]">
+            <img src="img/icon/personal.svg" class="h-6 w-6" alt="">
+          </div>
+          <div class="flex flex-col">
+            <h1 class="text-2xl font-semibold leading-[26px] mb-[14px]">List Scroll Effects</h1>
+            <p class="text-base leading-[26px]">Members, Friends Connection ( like followers ), Private Message</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="mt-60px mb-[130px] font-inter">
+    <div class="container flex flex-col items-center">
+      <h3 class="text-myBlue text-lg leading-[18px] font-medium mb-[10px]">Valuable Team</h3>
+      <h1 class="text-4xl leading-9 text-[#0A093D] font-bold mb-[18px]">Our Active Members</h1>
+      <p class="w-[454px] text-base text-center leading-[28px] mb-7">when an unknown printer took a galley of type and
+        meeting fari scrambled it.</p>
+      <div class="p-2 mb-[44px] bg-myBlue/[0.06] rounded-[14px]">
+        <div class="flex items-center gap-5 ">
+          <div
+            class="bg-transparent cursor-pointer transition duration-200 hover:bg-myBlue text-[#2F2C4A] p-5 hover:text-white rounded-[14px]">
+            Newst
+          </div>
+          <div
+            class="bg-transparent cursor-pointer transition duration-200 hover:bg-myBlue text-[#2F2C4A] p-5 hover:text-white rounded-[14px]">
+            Popular
+          </div>
+          <div
+            class="bg-transparent cursor-pointer transition duration-200 hover:bg-myBlue text-[#2F2C4A] p-5 hover:text-white rounded-[14px]">
+            active
+          </div>
+        </div>
+      </div>
+      <div class="flex  flex-wrap lg:flex-nowrap justify-center items-center gap-x-[30px]">
+        <div class="flex items-center flex-col py-[30px] px-[52px] shadow-xl rounded-lg">
+          <div class="relative mb-[29px]">
+            <img src="./img/icon/bg-profile.svg" class="" alt="">
+            <img src="./img/Image.png" class="absolute top-[8px]" alt="">
+            <img src="./img/icon/Check.svg" class="absolute right-[67px] bottom-0" alt="">
+          </div>
+          <h1 class="mb-[14px]">Fahim Rahman</h1>
+          <h5>@Rahman</h5>
+        </div>
+        <div class="flex items-center flex-col py-[30px] px-[52px] shadow-xl rounded-lg">
+          <div class="relative mb-[29px]">
+            <img src="./img/icon/bg-profile.svg" class="" alt="">
+            <img src="./img/Image-2.png" class="absolute top-[12px] right-[12px]" alt="">
+            <img src="./img/icon/Check.svg" class="absolute right-[67px] bottom-0" alt="">
+          </div>
+          <h1 class="mb-[14px]">Fahim Rahman</h1>
+          <h5>@Rahman</h5>
+        </div>
+        <div class="flex items-center flex-col py-[30px] px-[52px] shadow-xl rounded-lg">
+          <div class="relative mb-[29px]">
+            <img src="./img/icon/bg-profile.svg" class="" alt="">
+            <img src="./img/Image-3.png" class="absolute top-[12px] right-[12px]" alt="">
+            <img src="./img/icon/Check.svg" class="absolute right-[67px] bottom-0" alt="">
+          </div>
+          <h1 class="mb-[14px]">Fahim Rahman</h1>
+          <h5>@Rahman</h5>
+        </div>
+        <div class="flex items-center flex-col py-[30px] px-[52px] shadow-xl rounded-lg">
+          <div class="relative mb-[29px]">
+            <img src="./img/icon/bg-profile.svg" class="" alt="">
+            <img src="./img/Image-1.png" class="absolute top-[8px] " alt="">
+            <img src="./img/icon/Check.svg" class="absolute right-[67px] bottom-0" alt="">
+          </div>
+          <h1 class="mb-[14px]">Fahim Rahman</h1>
+          <h5>@Rahman</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-[#E5F0FD] font-inter pt-10">
+    <div class="container flex flex-wrap items-center justify-center lg:justify-between ">
+      <div class="max-w-[351px]">
+        <h3 class="text-myBlue text-lg leading-[18px] font-medium mb-[10px]">Get Our Aplication</h3>
+        <h1 class="text-4xl font-bold mb-[18px]">You Can Easily Find
+          This App…!</h1>
+        <p class="text-base leading-[26px]">I say chap that's suing lavatory chip shop gosh off his smashing boot are
+          you taking the piss posh loo
+          brilliant.</p>
+        <div class="flex gap-4 mt-9 py-5">
+          <div class="flex items-center w-[170px] h-[60px] rounded-xl bg-white gap-2">
+            <img src="img/icon/apple.svg" class="w-[60px] fill- h-[60px] object-contain" alt="">
+            <div class="">
+              <h3 class="text-xs">Download on the </h3>
+              <h1 class="font-bold">App Store </h1>
+            </div>
+          </div>
+          <div class="flex items-center w-[170px] h-[60px] rounded-xl bg-white gap-2">
+            <img src="img/icon/pstore.svg" class="pl-2 w-[30px] h-[30px] object-contain" alt="">
+            <div class="">
+              <h3 class="text-xs">Download on the </h3>
+              <h1 class="font-bold">Play Store</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-[60%]">
+        <img src="img/mobell.png" alt="">
+      </div>
+    </div>
+  </section>
+  <section class="bg-white my-[96px]">
+    <div class="container flex flex-col p-5 lg:p-0 gap-5 items-center">
+      <h3 class="text-myBlue font-medium">Get Our Aplication</h3>
+      <h1 class="font-bold text-[36px] mb-20">Latest News</h1>
+      <div class="grid md:grid-cols-2 grid-cols-1 lg:grid-cols-3 gap-x-[75px] gap-[75px]">
+        <div class="flex flex-col">
+          <img src="img/latest1.png" class="rounded-[20px] aspect-square" alt="">
+          <div class="pl-[64px] pt-[25px]">
+            <h1 class=" text-[20px] font-semibold text-[#2F2C4A]">It Does Not Matter Hows Slowly go as Long</h1>
+            <a class="text-[#656464] leading-4 mt-[24px] inline-block">Continue Reading <span class="inline-block"><img
+                  src="img/icon/ArrowRight.svg" alt=""></span></a>
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <img src="img/latest2.png" class="rounded-[20px] aspect-square" alt="">
+          <div class="pl-[64px] pt-[25px]">
+            <h1 class=" text-[20px] font-semibold text-[#2F2C4A]">Netbook Network Added New Photo Filter</h1>
+            <a class="text-[#656464] leading-4  mt-[24px] inline-block">Continue Reading</a>
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <img src="img/latest3.png" class="rounded-[20px] aspect-square" alt="">
+          <div class="pl-[64px] pt-[25px]">
+            <h1 class=" text-[20px] font-semibold text-[#2F2C4A] ">We Optimised Netbooks Better Navigation
+            </h1>
+            <a class="text-[#656464] leading-4  mt-[24px] inline-block">Continue Reading <span class="inline-block"><img
+                  src="img/icon/ArrowRight.svg" alt=""></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-[#2B2B39] font-inter">
+    <div class="container flex flex-wrap p-5 lg:p-10 lg:flex-nowrap items-center gap-[98px]">
+      <div class=" flex flex-col text-white">
+        <h3 class="font-bold mb-[22px] ">Home</h3>
+        <ul class="flex flex-col gap-y-[16px]">
+          <li class="text-[16px]">home</li>
+          <li class="text-[16px]">Community</li>
+          <li class="text-[16px]">Events</li>
+          <li class="text-[16px]">Contact</li>
+        </ul>
+      </div>
+      <div class=" flex flex-col text-white">
+        <h3 class="font-bold mb-[22px] ">Resource</h3>
+        <ul class="flex flex-col gap-y-[16px]">
+          <li class="text-[16px]">Blog</li>
+          <li class="text-[16px]">News</li>
+          <li class="text-[16px]">Guides</li>
+          <li class="text-[16px]">Help Center</li>
+        </ul>
+      </div>
+      <div class=" flex flex-col text-white">
+        <h3 class="font-bold mb-[22px] ">Community</h3>
+        <ul class="flex flex-col gap-y-[16px]">
+          <li class="text-[16px]">NewsFeed</li>
+          <li class="text-[16px]">Profile</li>
+          <li class="text-[16px]">Friends</li>
+          <li class="text-[16px]">Forums</li>
+        </ul>
+      </div>
+      <div class=" flex flex-col text-white">
+        <h3 class="font-bold mb-[22px] ">Main links</h3>
+        <ul class="flex flex-col gap-y-[16px]">
+          <li class="text-[16px]">Members</li>
+          <li class="text-[16px]">Activity</li>
+          <li class="text-[16px]">Groups</li>
+          <li class="text-[16px]">Private Group</li>
+        </ul>
+      </div>
+      <div
+        class="flex flex-col lg:justify-start lg:items-start lg:text-start   justify-center text-center items-center text-white">
+        <h1 class="text-[20px] mb-[20px] w-[179px]">Subscribe Circle Newsletter</h1>
+        <p class="text-[16px] mb-[32px]">Subscribe to be the first one to know about updates. Enter your email</p>
+        <div class="relative ">
+          <input type="text" placeholder="Email Address"
+            class="bg-transparent rounded-[12px] border border-white py-[18px] px-[28px] text-[#717179]">
+          <button
+            class="absolute rounded-[12px] top-0 bottom-0 right-0 w-[126px] text-[#2B2B39] bg-white">Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-[#20202D] font-inter">
+    <div class="container p-[31px] text-white flex flex-col lg:flex-row gap-y-5 items-center justify-between">
+      <h1 class="text-[14px] leading-[14px] font-[400]">Besnik Creative Agency.</h1>
+      <div class="flex items-center">
+        <img src="img/Group (1).png" alt="">
+        <h1 class="text-[24px] font-[600] pl-[6px]">Netbook</h1>
+      </div>
+      <div class="flex items-center gap-[8px]">
+        <div class="w-[36px] h-[36px] flex items-center justify-center bg-white rounded-full">
+          <img src="img/icon/twitter.svg" alt="">
+        </div>
+        <div class="w-[36px] h-[36px] flex items-center justify-center bg-white rounded-full">
+          <img src="img/icon/IG.svg" alt="">
+        </div>
+        <div class="w-[36px] h-[36px] flex items-center justify-center bg-white rounded-full">
+          <img src="img/icon/FB.svg" alt="">
+        </div>
+        <div class="w-[36px] h-[36px] flex items-center justify-center bg-white rounded-full">
+          <img src="img/icon/Linkedin.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="./node_modules/flowbite/dist/flowbite.js"></script>
+</body>
+
+</html>
