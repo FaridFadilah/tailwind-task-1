@@ -75,7 +75,7 @@
   <section id="hero" class="pt-[144px] font-inter h-full lg:h-[746px] bg-gradient-to-br from-white to-blue-500/20">
     <div
       class="container flex flex-wrap-reverse items-center justify-center lg:flex-nowrap lg:justify-between p-5 lg:p-0">
-      <div class="flex flex-col max-w-[515px]">
+      <div class="flex flex-col py-3 lg:py-0 max-w-[515px]">
         <div class="bg-myBlue/[.1] w-[177px] text-xs px-[29px] py-3 font-medium rounded-lg text-myBlue mb-[20px]">
           Netbook community
         </div>
@@ -98,14 +98,25 @@
   </section>
   <section id="netbook" class="mt-[96px] font-inter mb-[51px]">
     <div class="container p-5 lg:p-0 flex flex-wrap justify-center items-center lg:flex-nowrap lg:justify-between">
-      <div class="flex flex-col w-full lg:w-[35%] mt-10 lg:mt-0">
+      <div class="flex flex-col w-full items-center lg:items-start text-center lg:text-start lg:w-[35%] mt-10 lg:mt-0">
         <a href="" class="text-myBlue text-lg font-normal mb-[10px]">Whats Netboks?</a>
         <h1 class="text-[#0A093D] font-bold text-4xl mb-4">Why Join to Netbook Social Network? </h1>
         <p class="text-base font-normal text-[#656464]">Recent surveys have indicated that small businesses recognise
           the need they have to connect
           with consumer.
         </p>
-        <ul class="mt-9 mb-5 flex lg:block items-center gap-5 justify-center">
+        <div class="flex lg:flex-col flex-row mt-4 justify-center lg:gap-4 gap-24 md:gap-32 mb-5">
+          <input type="radio" name="toggle" value="Groups"
+            class="appearance-none w-[12px] h-[12px] rounded-[50%] shadow-[0_0_5px_#aac5c6] border-t-[.2vh] border-b-[.2vh] border-solid border-myBlue/[.8] transition-all ease-linear duration-[.2s] bg-myBlue/5 checked:border-[3px] checked:border-solid checked:border-sky-300 checked:w-[12px] checked:h-[12px] bg-none after:content-['Groups'] flex items-center after:pl-5"
+            style="background-image: none;" checked>
+          <input type="radio" name="toggle"
+            class="appearance-none w-[12px] h-[12px] rounded-[50%] shadow-[0_0_5px_#aac5c6] border-t-[.2vh] border-b-[.2vh] border-solid border-myBlue/[.8] transition-all ease-linear duration-[.2s] bg-myBlue/5 checked:border-[3px] checked:border-solid checked:border-sky-300 checked:w-[12px] checked:h-[12px] bg-none after:content-['Messages'] flex items-center after:pl-5"
+            style="background-image: none;" value="Messages">
+          <input type="radio" name="toggle"
+            class="appearance-none w-[12px] h-[12px] rounded-[50%] shadow-[0_0_5px_#aac5c6] border-t-[.2vh] border-b-[.2vh] border-solid border-myBlue/[.8] transition-all ease-linear duration-[.2s] bg-myBlue/5 checked:border-[3px] checked:border-solid checked:border-sky-300 checked:w-[12px] checked:h-[12px] bg-none after:content-['Share'] flex items-center after:pl-5"
+            style="background-image: none;" value="Share">
+        </div>
+        <!-- <ul class="mt-9 mb-5 flex lg:block items-center gap-5 justify-center">
           <li
             class="before:content-[''] before:inline-block before:w-[18px] before:h-[18px] before:bg-[url('./img/icon/dot.svg')] before:mr-3 before:bg-cover before:bg-no-repeat items-center flex mb-4 text-lg leading-[18px] ">
             Groups</li>
@@ -115,7 +126,7 @@
           <li
             class="before:content-[''] before:inline-block before:w-[18px] before:h-[18px] before:bg-[url('./img/icon/dot.svg')] before:mr-3 before:bg-cover before:bg-no-repeat items-center flex mb-4">
             Share</li>
-        </ul>
+        </ul> -->
       </div>
       <div class="grid grid-cols-2 place-items-center gap-8 ">
         <img src="img/netbook1.png" class="w-full object-contain" alt="">
@@ -127,8 +138,9 @@
     </div>
   </section>
   <section id="chieve" class="mt-[84px] font-inter mb-[130px]">
-    <div class="container p-5 lg:p-0 flex flex-wrap lg:flex-nowrap items-center ">
-      <div class="flex flex-wrap lg:flex-nowrap items-center gap-6">
+    <div
+      class="container flex flex-wrap-reverse md:flex-col-reverse md:justify-center lg:flex-nowrap lg:flex-row items-center gap-6 text-center lg:text-start">
+      <div class="flex flex-wrap md:flex-nowrap items-center gap-6 p-5 lg:p-0">
         <div class="px-[44px] border border-gray-700 py-[42px] shadow-xl rounded-[14px]">
           <div class="flex items-center gap-[10px] mb-[36px]">
             <img src="img/icon/Star.svg" alt="">
@@ -174,32 +186,34 @@
             class="text-[#4A4A56] font-medium after:content-[''] after:bg-[url('./img/icon/ArrowRight.svg')] after:inline-block after:bg-cover after:w-[10px] after:h-[10px] after:ml-2 ">Go
             To Awards</a>
         </div>
-        <div class=" ">
-          <h3 class="text-myBlue mb-[10px] font-medium">Our Achievement</h3>
-          <h1 class="font-bold text-4xl mb-[18px]">We are Connecting You The Digital Life.</h1>
-          <p class="text-base mb-[38px]">The scope the Social Media becomes crucial Is helps the business to directly
-            engage with
-            their needs and
-            wants.</p>
-          <button
-            class="py-[22px] px-[38px] bg-myBlue text-white rounded-[14px] after:content-[''] after:bg-[url('./img/icon/ArrowRight.svg')] after:inline-block after:bg-cover after:w-[10px] after:h-[10px] after:ml-2">Discover
-            me</button>
-        </div>
+      </div>
+      <div class="px-[42px] py-[44px]  rounded-[14px]">
+        <h3 class="text-myBlue mb-[10px] font-medium">Our Achievement</h3>
+        <h1 class="font-bold text-4xl mb-[18px]">We are Connecting You The Digital Life.</h1>
+        <p class="text-base mb-[38px]">The scope the Social Media becomes crucial Is helps the business to directly
+          engage with
+          their needs and
+          wants.</p>
+        <button
+          class="py-[22px] px-[38px] bg-myBlue text-white rounded-[14px] after:content-[''] after:bg-[url('./img/icon/ArrowRight.svg')] after:inline-block after:bg-cover after:w-[10px] after:h-[10px] after:ml-2">Discover
+          me</button>
       </div>
     </div>
   </section>
   <section class="mt-[60px] font-inter mb-20 "
     style="background: linear-gradient(0deg, rgba(241, 246, 253, 0) 1.63%, #F1F6FD 20.5%, #F1F6FD 58.57%, #FFFFFF 100%)">
-    <div class="container flex flex-col items-center p-5 lg:p-0">
+    <div
+      class="container flex flex-wrap md:flex-col md:flex-nowrap text-center justify-center md:text-start items-center p-5 lg:p-0 md:justify-start">
       <h3 class="text-myBlue text-lg leading-[18px] font-medium mb-[10px]">Our Community</h3>
       <h1 class="text-[#0A093D] text-4xl font-bold mb-[19px]">Community Main Feature</h1>
       <p class="w-[421px] text-base text-center leading-[28px]">The wise man therefore always holds in these matters to
         this principle of selection.
       </p>
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-[44px] mt-16">
-        <div class="bg-white p-10 flex rounded-[14px] hover:shadow-xl transition duration-200">
+        <div
+          class="bg-white p-10 flex items-center flex-col md:flex-row rounded-[14px] hover:shadow-xl transition duration-200 hover:-translate-y-2">
           <div
-            class="w-[66px] h-[66px] mr-[36px] px-5 py-[19px] rounded-[24px] flex items-center justify-center bg-gradient-to-b from-[#5CA1FE] to-[#217BF4] shadow-xl">
+            class="w-[66px] h-[66px] mb-[10px] mr-0 md:mr-[36px] px-5 py-[19px] rounded-[24px] flex items-center justify-center bg-gradient-to-b from-[#5CA1FE] to-[#217BF4] shadow-xl">
             <img src="img/icon/personal.svg" class="h-6 w-6" alt="">
           </div>
           <div class="flex flex-col">
@@ -207,9 +221,10 @@
             <p class="text-base leading-[26px] ">Members, Friends Connection ( like followers ), Private Message</p>
           </div>
         </div>
-        <div class=" flex bg-white rounded-[14px] p-10 hover:shadow-xl transition duration-200">
+        <div
+          class="bg-white p-10 flex items-center flex-col md:flex-row rounded-[14px] hover:shadow-xl transition duration-200 hover:-translate-y-2">
           <div
-            class="w-[66px] h-[66px] mr-[36px] px-4 py-[19px] rounded-[24px] flex items-center justify-center bg-gradient-to-br from-[#FF858A] to-[#F04148] shadow-xl">
+            class="w-[66px] h-[66px] mr-0 mb-[10px] md:mr-[36px] px-4 py-[19px] rounded-[24px] flex items-center justify-center bg-gradient-to-br from-[#FF858A] to-[#F04148] shadow-xl">
             <img src="img/icon/people.svg" class="h-6 w-6" alt="">
           </div>
           <div class="flex flex-col">
@@ -217,9 +232,10 @@
             <p class="text-base leading-[26px] ">Members, Friends Connection ( like followers ), Private Message</p>
           </div>
         </div>
-        <div class="flex bg-white rounded-[14px] p-10 hover:shadow-xl transition duration-200">
+        <div
+          class="bg-white p-10 flex items-center flex-col md:flex-row rounded-[14px] hover:shadow-xl transition duration-200 hover:-translate-y-2">
           <div
-            class="w-[66px] h-[66px] px-4 py-[19px] rounded-[24px] flex items-center justify-center bg-gradient-to-b from-[#FFD085] to-[#FFAF2E] mr-[36px] shadow-xl">
+            class="w-[66px] h-[66px] px-4 py-[19px] rounded-[24px] flex items-center justify-center bg-gradient-to-b from-[#FFD085] to-[#FFAF2E] mr-0 mb-[10px] md:mr-[36px] shadow-xl">
             <img src="img/icon/chat.svg" class="h-6 w-6" alt="">
           </div>
           <div class="flex flex-col">
@@ -227,9 +243,10 @@
             <p class="text-base leading-[26px]">Members, Friends Connection ( like followers ), Private Message</p>
           </div>
         </div>
-        <div class="flex p-10 rounded-[14px] bg-white hover:shadow-xl transition duration-200">
+        <div
+          class="bg-white p-10 flex items-center flex-col md:flex-row rounded-[14px] hover:shadow-xl transition duration-200 hover:-translate-y-2">
           <div
-            class="w-[66px] h-[66px] px-4 py-[19px] rounded-[24px] flex items-center justify-center bg-gradient-to-b from-[#5CA1FE] to-[#217BF4] mr-[36px]">
+            class="w-[66px] h-[66px] px-4 py-[19px] rounded-[24px] flex items-center justify-center bg-gradient-to-b from-[#5CA1FE] to-[#217BF4] mr-0 mb-[10px] md:mr-[36px]">
             <img src="img/icon/puzzle.svg" class="h-6 w-6" alt="">
           </div>
           <div class="flex flex-col">
@@ -237,9 +254,10 @@
             <p class="text-base leading-[26px]">Members, Friends Connection ( like followers ), Private Message</p>
           </div>
         </div>
-        <div class="flex p-10 bg-white rounded-[14px] hover:shadow-xl transition duration-200">
+        <div
+          class="bg-white p-10 flex items-center flex-col md:flex-row rounded-[14px] hover:shadow-xl transition duration-200 hover:-translate-y-2">
           <div
-            class="w-[66px] h-[66px] px-4 py-[19px] rounded-[24px] flex items-center justify-center bg-gradient-to-br from-[#FF858A] to-[#F04148] mr-[36px]">
+            class="w-[66px] h-[66px] px-4 py-[19px] rounded-[24px] flex items-center justify-center bg-gradient-to-br from-[#FF858A] to-[#F04148] mr-0 mb-[10px] md:mr-[36px]">
             <img src="img/icon/personal.svg" class="h-6 w-6" alt="">
           </div>
           <div class="flex flex-col">
@@ -247,9 +265,10 @@
             <p class="text-base leading-[26px]">Members, Friends Connection ( like followers ), Private Message</p>
           </div>
         </div>
-        <div class="flex p-10 bg-white rounded-[14px] hover:shadow-xl transition duration-200">
+        <div
+          class="bg-white p-10 flex items-center flex-col md:flex-row rounded-[14px] hover:shadow-xl transition duration-200 hover:-translate-y-2">
           <div
-            class="w-[66px] h-[66px] px-4 py-[19px] rounded-[24px] flex items-center justify-center bg-gradient-to-b from-[#FFD085] to-[#FFAF2E] mr-[36px]">
+            class="w-[66px] h-[66px] px-4 py-[19px] rounded-[24px] flex items-center justify-center bg-gradient-to-b from-[#FFD085] to-[#FFAF2E] mr-0 mb-[10px] md:mr-[36px]">
             <img src="img/icon/personal.svg" class="h-6 w-6" alt="">
           </div>
           <div class="flex flex-col">
@@ -261,7 +280,8 @@
     </div>
   </section>
   <section class="mt-60px mb-[130px] font-inter">
-    <div class="container flex flex-col items-center">
+    <div
+      class="container flex flex-wrap md:flex-nowrap justify-center md:flex-col items-center text-center md:text-start">
       <h3 class="text-myBlue text-lg leading-[18px] font-medium mb-[10px]">Valuable Team</h3>
       <h1 class="text-4xl leading-9 text-[#0A093D] font-bold mb-[18px]">Our Active Members</h1>
       <p class="w-[454px] text-base text-center leading-[28px] mb-7">when an unknown printer took a galley of type and
@@ -323,23 +343,23 @@
     </div>
   </section>
   <section class="bg-[#E5F0FD] font-inter pt-10">
-    <div class="container flex flex-wrap items-center justify-center lg:justify-between ">
-      <div class="max-w-[351px]">
+    <div class="container flex flex-wrap items-center text-center lg:text-start justify-center lg:justify-between ">
+      <div class="max-w-[351px] p-5 lg:p-0">
         <h3 class="text-myBlue text-lg leading-[18px] font-medium mb-[10px]">Get Our Aplication</h3>
         <h1 class="text-4xl font-bold mb-[18px]">You Can Easily Find
           This App…!</h1>
         <p class="text-base leading-[26px]">I say chap that's suing lavatory chip shop gosh off his smashing boot are
           you taking the piss posh loo
           brilliant.</p>
-        <div class="flex gap-4 mt-9 py-5">
-          <div class="flex items-center w-[170px] h-[60px] rounded-xl bg-white gap-2">
+        <div class="flex flex-col items-center lg:flex-row  gap-4 mt-9 py-5">
+          <div class="flex items-center w-[60%] lg:w-[170px] lg:h-[60px] rounded-xl bg-white gap-2">
             <img src="img/icon/apple.svg" class="w-[60px] fill- h-[60px] object-contain" alt="">
             <div class="">
               <h3 class="text-xs">Download on the </h3>
               <h1 class="font-bold">App Store </h1>
             </div>
           </div>
-          <div class="flex items-center w-[170px] h-[60px] rounded-xl bg-white gap-2">
+          <div class="flex items-center w-[60%] lg:w-[170px] lg:h-[60px] rounded-xl bg-white gap-2">
             <img src="img/icon/pstore.svg" class="pl-2 w-[30px] h-[30px] object-contain" alt="">
             <div class="">
               <h3 class="text-xs">Download on the </h3>
@@ -361,7 +381,8 @@
         <div class="flex flex-col">
           <img src="img/latest1.png" class="rounded-[20px] aspect-square" alt="">
           <div class="pl-[64px] pt-[25px]">
-            <h1 class=" text-[20px] font-semibold text-[#2F2C4A]">It Does Not Matter Hows Slowly go as Long</h1>
+            <h1 class="text-[20px] font-semibold text-[#2F2C4A]">
+              It Does Not Matter Hows Slowly go as Long</h1>
             <a class="text-[#656464] leading-4 mt-[24px] inline-block">Continue Reading <span class="inline-block"><img
                   src="img/icon/ArrowRight.svg" alt=""></span></a>
           </div>
@@ -370,7 +391,8 @@
           <img src="img/latest2.png" class="rounded-[20px] aspect-square" alt="">
           <div class="pl-[64px] pt-[25px]">
             <h1 class=" text-[20px] font-semibold text-[#2F2C4A]">Netbook Network Added New Photo Filter</h1>
-            <a class="text-[#656464] leading-4  mt-[24px] inline-block">Continue Reading</a>
+            <a class="text-[#656464] leading-4  mt-[24px] inline-block">Continue Reading <span class="inline-block"><img
+                  src="img/icon/ArrowRight.svg" alt=""></span></a>
           </div>
         </div>
         <div class="flex flex-col">
@@ -386,7 +408,8 @@
     </div>
   </section>
   <section class="bg-[#2B2B39] font-inter">
-    <div class="container flex flex-wrap p-5 lg:p-10 lg:flex-nowrap items-center gap-[98px]">
+    <div
+      class="container flex flex-wrap p-5 lg:p-10 lg:flex-nowrap justify-evenly lg:justify-start items-center gap-[98px]">
       <div class=" flex flex-col text-white">
         <h3 class="font-bold mb-[22px] ">Home</h3>
         <ul class="flex flex-col gap-y-[16px]">
@@ -444,17 +467,54 @@
         <h1 class="text-[24px] font-[600] pl-[6px]">Netbook</h1>
       </div>
       <div class="flex items-center gap-[8px]">
-        <div class="w-[36px] h-[36px] flex items-center justify-center bg-white rounded-full">
-          <img src="img/icon/twitter.svg" alt="">
+        <div
+          class="w-[36px] h-[36px] fill-current text-gray-800 flex items-center justify-center bg-white hover:text-gray-200 hover:bg-zinc-500 rounded-full">
+          <svg class="w-6 h-6 " enable-background="new 0 0 56.693 56.693" height="56.693px" id="Layer_1" version="1.1"
+            viewBox="0 0 56.693 56.693" width="56.693px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path
+              d="M52.837,15.065c-1.811,0.805-3.76,1.348-5.805,1.591c2.088-1.25,3.689-3.23,4.444-5.592c-1.953,1.159-4.115,2-6.418,2.454  c-1.843-1.964-4.47-3.192-7.377-3.192c-5.581,0-10.106,4.525-10.106,10.107c0,0.791,0.089,1.562,0.262,2.303  c-8.4-0.422-15.848-4.445-20.833-10.56c-0.87,1.492-1.368,3.228-1.368,5.082c0,3.506,1.784,6.6,4.496,8.412  c-1.656-0.053-3.215-0.508-4.578-1.265c-0.001,0.042-0.001,0.085-0.001,0.128c0,4.896,3.484,8.98,8.108,9.91  c-0.848,0.23-1.741,0.354-2.663,0.354c-0.652,0-1.285-0.063-1.902-0.182c1.287,4.015,5.019,6.938,9.441,7.019  c-3.459,2.711-7.816,4.327-12.552,4.327c-0.815,0-1.62-0.048-2.411-0.142c4.474,2.869,9.786,4.541,15.493,4.541  c18.591,0,28.756-15.4,28.756-28.756c0-0.438-0.009-0.875-0.028-1.309C49.769,18.873,51.483,17.092,52.837,15.065z" />
+          </svg>
         </div>
-        <div class="w-[36px] h-[36px] flex items-center justify-center bg-white rounded-full">
-          <img src="img/icon/IG.svg" alt="">
+        <div
+          class="w-[36px] h-[36px] fill-current text-gray-800 flex items-center justify-center bg-white hover:text-gray-200 hover:bg-zinc-500 rounded-full">
+          <svg class="w-6 h-6 " version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 56.7 56.7"
+            enable-background="new 0 0 56.7 56.7" xml:space="preserve">
+            <g>
+              <path d="M28.2,16.7c-7,0-12.8,5.7-12.8,12.8s5.7,12.8,12.8,12.8S41,36.5,41,29.5S35.2,16.7,28.2,16.7z M28.2,37.7
+		c-4.5,0-8.2-3.7-8.2-8.2s3.7-8.2,8.2-8.2s8.2,3.7,8.2,8.2S32.7,37.7,28.2,37.7z" />
+              <circle cx="41.5" cy="16.4" r="2.9" />
+              <path d="M49,8.9c-2.6-2.7-6.3-4.1-10.5-4.1H17.9c-8.7,0-14.5,5.8-14.5,14.5v20.5c0,4.3,1.4,8,4.2,10.7c2.7,2.6,6.3,3.9,10.4,3.9
+		h20.4c4.3,0,7.9-1.4,10.5-3.9c2.7-2.6,4.1-6.3,4.1-10.6V19.3C53,15.1,51.6,11.5,49,8.9z M48.6,39.9c0,3.1-1.1,5.6-2.9,7.3
+		s-4.3,2.6-7.3,2.6H18c-3,0-5.5-0.9-7.3-2.6C8.9,45.4,8,42.9,8,39.8V19.3c0-3,0.9-5.5,2.7-7.3c1.7-1.7,4.3-2.6,7.3-2.6h20.6
+		c3,0,5.5,0.9,7.3,2.7c1.7,1.8,2.7,4.3,2.7,7.2V39.9L48.6,39.9z" />
+            </g>
+          </svg>
+
         </div>
-        <div class="w-[36px] h-[36px] flex items-center justify-center bg-white rounded-full">
-          <img src="img/icon/FB.svg" alt="">
+        <div
+          class="w-[36px] h-[36px] fill-current text-gray-800 hover:text-gray-200 hover:bg-zinc-500 flex items-center justify-center bg-white rounded-full">
+          <svg class="h-6 w-6" enable-background="new 0 0 56.693 56.693" height="56.693px" id="Layer_1" version="1.1"
+            viewBox="0 0 56.693 56.693" width="56.693px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path
+              d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029  c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77  L40.43,21.739z" />
+          </svg>
         </div>
-        <div class="w-[36px] h-[36px] flex items-center justify-center bg-white rounded-full">
-          <img src="img/icon/Linkedin.svg" alt="">
+        <div
+          class="w-[36px] h-[36px] fill-current text-gray-800 hover:text-gray-200 hover:bg-zinc-500 flex items-center justify-center bg-white rounded-full ">
+          <svg baseProfile="tiny" height="24px" class="h-6 w-6" id="Layer_1" version="1.2" viewBox="0 0 24 24"
+            width="24px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g>
+              <path fill='currentColor'
+                d="M8,19H5V9h3V19z M19,19h-3v-5.342c0-1.392-0.496-2.085-1.479-2.085c-0.779,0-1.273,0.388-1.521,1.165C13,14,13,19,13,19h-3   c0,0,0.04-9,0-10h2.368l0.183,2h0.062c0.615-1,1.598-1.678,2.946-1.678c1.025,0,1.854,0.285,2.487,1.001   C18.683,11.04,19,12.002,19,13.353V19z" />
+            </g>
+            <g>
+              <ellipse cx="6.5" cy="6.5" rx="1.55" ry="1.5" />
+            </g>
+          </svg>
         </div>
       </div>
     </div>

@@ -3,3 +3,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+  .li-strip{
+    @apply before:absolute before:left-2 before:inline-block before:bg-[#FFAF2E] before:w-3
+  }
+}
